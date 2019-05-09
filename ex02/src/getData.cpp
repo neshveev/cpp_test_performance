@@ -22,6 +22,7 @@ Quad	readData(const char* name)
 		point[i] = Vec2(atof(str.data() + 1),
 			atof(str.data() + str.rfind('<') + 1));
 	}
+	file.close();
 	return Quad(point[0], point[1], point[2], point[3]);
 }
 

@@ -80,6 +80,7 @@ void	readInTab(std::vector<int>& tab, const char* name)
 			tab.push_back(atoi(str.data()));
 	}
 	myAssert(tab.size() > 0, "No data");
+	file.close();
 }
 
 int	main(int argc, char **argv)
